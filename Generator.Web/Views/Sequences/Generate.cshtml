@@ -1,0 +1,69 @@
+﻿@model Generator.Web.Models.SequenceModel
+
+@{
+    ViewBag.Title = "Sequence Generator";
+}
+
+<br />
+<br />
+
+@using (Html.BeginForm("Generate", "Sequences", FormMethod.Post))
+{
+    @Html.DisplayNameFor(i => i.Number)
+    <br />
+    <br />
+    @Html.TextBoxFor(i => i.Number, new { @class = "form-control" });
+    <br />
+    <input type="submit" value="Submit" class="btn btn-primary" />
+}
+
+@if (Model.Sequences != null && !Model.Sequences.Count.Equals(0))
+{
+    <br />
+    <br />
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title"><b>@Html.DisplayNameFor(i => i.Sequences)</b></h3>
+        </div>
+        <div class="panel-body">
+            <table width="100%">
+                @foreach(var i in Model.Sequences.Keys)
+                {
+                    <tr>
+                        <td>@i</td>
+                        <td>@Model.Sequences[i]</td>
+                    </tr>
+                }
+                <tr>
+                    <td colspan="2"><br/></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Note: All sequences include the input number (upper bound) at the end.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+}
+<script lang="javascript" type="text/javascript">
+    $(document).ready(function () {     
+        $(this).submit(function () {
+            if ($.trim($("#Number").val()) == "") {
+                alert("please enter a valid number")
+                $("#Number").focus();
+                return false;
+            }
+
+            if (isNaN($.trim($("#Number").val()))) {
+                alert("please enter a valid numeric value")
+                $("#Number").focus();
+                return false;
+            }
+
+            if ($("#Number").val() < 1 || $("#Number").val() > 2147483647) {
+                alert("please enter a valid numeric value (Min: 1 and Max: 2,147,483,647)")
+                $("#Number").focus();
+                return false;
+            }
+        });
+    });
+</script>

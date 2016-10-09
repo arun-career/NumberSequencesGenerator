@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Instructions to opearate";
+}
+
+<br />
+<br />
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><b>@ViewBag.Title</b></h3>
+    </div>
+    <div class="panel-body">
+        @ViewBag.Instructions1
+        <br /><br />
+        @ViewBag.Instructions2
+        <br /><br />
+        @ViewBag.Instructions3
+        <br /><br />
+        @ViewBag.Instructions4
+        <br /><br />
+        @Html.ActionLink("Generate", "Generate", null, new { @class = "btn btn-primary" })
+    </div>
+</div>
