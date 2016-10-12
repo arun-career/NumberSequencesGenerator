@@ -29,7 +29,6 @@ namespace Generator.Web.Properties {
           This application shall be used to genearate a set of number sequences. <br/><br/>
           This will accept only positive numeric values that will be used as the upper bound of the sequence (Min: 1 and Max: 2,147,483,647). <br/><br/>
           The sequences are Simple Sequence, Odd Numbers, Even Numbers and Fibonacci Sequence. <br/><br/>
-          This will accept only positive numeric values that will be used as the upper bound of the sequence (Min: 1 and Max: 2,147,483,647). <br/><br/>
           There will be one more special sequence that will be similar to Simple sequence. But the numbers that are divisible by 3 will be replaced by C, divisible by 3 will be replaced by E and divisible by both 3 and 5 will be replaced by Z. <br/><br/>
         ")]
         public string Instructions {
