@@ -15,12 +15,18 @@ namespace Generator.Web.Controllers
         }
 
         [HttpGet]
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpGet]
         public ActionResult Instructions()
         {
-            ViewBag.Instructions1 = Properties.Settings.Default.Instructions1;
-            ViewBag.Instructions2 = Properties.Settings.Default.Instructions2;
-            ViewBag.Instructions3 = Properties.Settings.Default.Instructions3;
-            ViewBag.Instructions4 = Properties.Settings.Default.Instructions4;
+            //ViewBag.Instructions1 = Properties.Settings.Default.Instructions1;
+            //ViewBag.Instructions2 = Properties.Settings.Default.Instructions2;
+            //ViewBag.Instructions3 = Properties.Settings.Default.Instructions3;
+            //ViewBag.Instructions4 = Properties.Settings.Default.Instructions4;
 
             return View();
         }

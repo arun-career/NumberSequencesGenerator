@@ -3,24 +3,12 @@
   <Profiles />
   <Settings>
     <Setting Name="Instructions" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Instructions...</Value>
-    </Setting>
-    <Setting Name="Instructions1" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">This application shall be used to genearate a set of number sequences. </Value>
-    </Setting>
-    <Setting Name="Instructions2" Type="System.String" Scope="Application">
       <Value Profile="(Default)">
-          This will accept only positive numeric values (Minumum: 1 and Maximum: 2,147,483,647) that will be used as the upper bound of the sequence.
-        </Value>
-    </Setting>
-    <Setting Name="Instructions3" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">
-          The sequences are Simple Sequence, Odd Numbers, Even Numbers and Fibonacci Sequences.
-        </Value>
-    </Setting>
-    <Setting Name="Instructions4" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">
-          There will be one more special sequence that will be similar to Simple sequence. But the numbers that are divisible by 3 will be replaced by C, divisible by 3 will be replaced by E and divisible by 3 and 5 will be replaced by Z.
+          This application shall be used to genearate a set of number sequences. &lt;br/&gt;&lt;br/&gt;
+          This will accept only positive numeric values that will be used as the upper bound of the sequence (Min: 1 and Max: 2,147,483,647). &lt;br/&gt;&lt;br/&gt;
+          The sequences are Simple Sequence, Odd Numbers, Even Numbers and Fibonacci Sequence. &lt;br/&gt;&lt;br/&gt;
+          This will accept only positive numeric values that will be used as the upper bound of the sequence (Min: 1 and Max: 2,147,483,647). &lt;br/&gt;&lt;br/&gt;
+          There will be one more special sequence that will be similar to Simple sequence. But the numbers that are divisible by 3 will be replaced by C, divisible by 3 will be replaced by E and divisible by both 3 and 5 will be replaced by Z. &lt;br/&gt;&lt;br/&gt;
         </Value>
     </Setting>
   </Settings>

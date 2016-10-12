@@ -1,6 +1,7 @@
 using Generator.Business;
 using Generator.Business.Core;
 using Microsoft.Practices.Unity;
+using System.Web.Http;
 using System.Web.Mvc;
 using Unity.Mvc5;
 
@@ -17,6 +18,8 @@ namespace Generator.Web
             container.RegisterInstance<IGeneratorService>(new GeneratorService(container.ResolveAll<IGenerator>()));
 
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
+
+            GlobalConfiguration.Configuration.DependencyResolver = new UnityResolver(container);
         }
     }
 }

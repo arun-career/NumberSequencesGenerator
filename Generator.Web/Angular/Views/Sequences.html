@@ -1,0 +1,44 @@
+﻿<form name="seqForm">
+    <br />
+    <b>Number:</b>
+    <br />
+    <br />
+    <input type="number" class="form-control" name="upperLimit" data-ng-model="number" min="1" max="2147483647" required  />
+    <br />
+    <div role="alert">
+        <span class="alert-danger" ng-show="seqForm.upperLimit.$error.required">
+            Please enter a valid number!
+        </span>
+        <span class="alert-danger" ng-show="seqForm.upperLimit.$error.min">
+            Please enter a valid number between the range!
+        </span>
+        <span class="alert-danger" ng-show="seqForm.upperLimit.$error.max">
+            Please enter a valid number between the range!
+        </span>
+    </div>
+    <br />
+    <button class="btn btn-primary" type="button" data-ng-click="execute()"><span class="glyphicon glyphicon-flash"></span>&nbsp;Generate</button>
+    <br />
+    <br />
+</form>
+    <div class="panel panel-default" style="{{display}}">
+        <div class="panel-heading">
+            <h3 class="panel-title"><b>Sequences</b></h3>
+        </div>
+        <div class="panel-body">
+            <table width="100%">
+                <tr data-ng-repeat="(key, value) in data">
+                    <td>{{key}}</td>
+                    <td>
+                        <span data-ng-repeat="i in value track by $index" ng-class="seqNumbers">{{i}}, </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><br /></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><small><b>Note:</b>All sequences include the input number (upper bound) at the end.</small></td>
+                </tr>
+            </table>
+        </div>
+    </div>

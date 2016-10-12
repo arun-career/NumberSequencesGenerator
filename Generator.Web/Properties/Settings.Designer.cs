@@ -25,52 +25,16 @@ namespace Generator.Web.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Instructions...")]
+        [global::System.Configuration.DefaultSettingValueAttribute(@"
+          This application shall be used to genearate a set of number sequences. <br/><br/>
+          This will accept only positive numeric values that will be used as the upper bound of the sequence (Min: 1 and Max: 2,147,483,647). <br/><br/>
+          The sequences are Simple Sequence, Odd Numbers, Even Numbers and Fibonacci Sequence. <br/><br/>
+          This will accept only positive numeric values that will be used as the upper bound of the sequence (Min: 1 and Max: 2,147,483,647). <br/><br/>
+          There will be one more special sequence that will be similar to Simple sequence. But the numbers that are divisible by 3 will be replaced by C, divisible by 3 will be replaced by E and divisible by both 3 and 5 will be replaced by Z. <br/><br/>
+        ")]
         public string Instructions {
             get {
                 return ((string)(this["Instructions"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("This application shall be used to genearate a set of number sequences. ")]
-        public string Instructions1 {
-            get {
-                return ((string)(this["Instructions1"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("\r\n          This will accept only positive numeric values (Minumum: 1 and Maximum" +
-            ": 2,147,483,647) that will be used as the upper bound of the sequence.\r\n        " +
-            "")]
-        public string Instructions2 {
-            get {
-                return ((string)(this["Instructions2"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("\r\n          The sequences are Simple Sequence, Odd Numbers, Even Numbers and Fibo" +
-            "nacci Sequences.\r\n        ")]
-        public string Instructions3 {
-            get {
-                return ((string)(this["Instructions3"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("\r\n          There will be one more special sequence that will be similar to Simpl" +
-            "e sequence. But the numbers that are divisible by 3 will be replaced by C, divis" +
-            "ible by 3 will be replaced by E and divisible by 3 and 5 will be replaced by Z.\r" +
-            "\n        ")]
-        public string Instructions4 {
-            get {
-                return ((string)(this["Instructions4"]));
             }
         }
     }
