@@ -16,8 +16,7 @@ Below are the sequences that shall be generated from this application.
 
 ## Technical Components:
 
-* `Generator.Web` is the MVC web application that interacts with the user (UI module).
-		* This appliaction has been extended to implement Web APIs and Angular JS. 
+* `Generator.Web` is the MVC web application that interacts with the user (UI module). This appliaction has been later extended to implement Web APIs and Angular JS. 
 *  Note: Please modify the RouteConfig.cs file to redirect the home page appropriately. 
 * `Generator.Business` is the library that contains the business logic.
 * `Generator.Business.Tests` is the testing project that tests the business library.
